@@ -1,0 +1,34 @@
+<section class="resume-builder">
+  <h2>Resume Builder</h2>
+
+  <form [formGroup]="resumeForm" class="form-section">
+    <label>
+      Full Name:
+      <input formControlName="name" type="text" />
+    </label>
+
+    <label>
+      Title:
+      <input formControlName="title" type="text" />
+    </label>
+
+    <label>
+      Summary:
+      <textarea formControlName="summary"></textarea>
+    </label>
+
+    <label>
+      Skills (comma-separated):
+      <input formControlName="skills" type="text" />
+    </label>
+
+    <button type="button" (click)="downloadResume()">Download / Print Resume</button>
+  </form>
+
+  <div class="preview">
+    <h3>{{ resumeForm.value.name }}</h3>
+    <h4>{{ resumeForm.value.title }}</h4>
+    <p>{{ resumeForm.value.summary }}</p>
+    <p><strong>Skills:</strong> {{ resumeForm.value.skills }}</p>
+  </div>
+</section>

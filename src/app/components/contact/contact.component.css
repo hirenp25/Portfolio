@@ -1,0 +1,39 @@
+.contact-section {
+  padding: 60px 30px;
+  max-width: 800px;
+  margin: auto;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.social-links {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.social-links a {
+  color: #007acc;
+  text-decoration: none;
+}
